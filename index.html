@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div style="display: flex; flex-direction: row;">
+    <div class="navbar">
+        <img class="logo" src="assets/images/ModWizard logo.png"">
+        <div class="icon" style="transition:ease-in-out 500ms rotate;">
+            <img src="assets/images/ModWizard - Controller.png" alt="" style="transition: ease-in-out 500ms width;">
+            <label>Games</label>
+        </div>
+        <div class="icon" style="transition:ease-in-out 500ms rotate;">
+            <img src="assets/images/ModWizard - Tool.png" alt="" style="transition: ease-in-out 500ms width;">
+            <label>ModMaker</label>
+        </div>
+        <div class="icon" style="transition:ease-in-out 500ms rotate;">
+            <img src="assets/images/ModWizard - Community.png" alt="" style="transition: ease-in-out 500ms width;">
+            <label>Community</label>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div style="position: fixed; margin: 10pt; right: 2%;" id="logs">
+            <button class="but" onclick="window.location.href = 'signin.html'">Signin</button>
+            <button class="but ac" onclick="window.location.href = 'signup.html'">Signup</button>    
+        </div>
+        <div style="position: fixed; margin: 10pt; right: 5%; display: none; flex-direction: row;" id="logs1" onclick='logmenu()'>
+            <img src="assets/images/avatar-50.png" alt="" style="width: 35pt; height: 35pt; border: 2px solid rgb(0, 125, 255); border-radius: 100pt; margin-right: 10pt;">  
+            <p id="userdis">DI</p>
+        </div>
+        <div class="logmenu" id="logmenus" style="transition: ease-in-out 500ms top;">
+            <label>Account</label>
+            <label>Settings</label>
+            <label style="border-top: 1px solid rgb(0, 125, 255);" onclick="logout()">Logout</label>
+        </div>
+        <div style="position: fixed; left: 50%; transform: translateX(-50%); width: 100%;">
+            <input class="search" placeholder="...Watchdogs2" style="width: 50%; position: fixed; left: 50%; transform: translateX(-50%); background: url('/assets/images/Search.png') no-repeat 10pt;">
+        </div>
+    </div>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; position: fixed; left: 50%; transform: translateX(-50%); top: 35%;">
+        <h1 style="font-size: xxx-large;">Play Games</h1>
+        <h1>Your Way</h1>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
